@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasriy Sayt - Professional Veb-sayt va Telegram Botlar Yaratish</title>
+    <meta name="description" content="Zamonaviy, tezkor va sotuvchi veb-saytlar, landing page hamda Telegram botlar yaratish xizmati. Biznesingizni raqamli dunyoda rivojlantiring. @nasriy_sayt1">
+    <meta name="keywords" content="sayt yaratish, landing page, veb dasturlash, telegram bot, IT xizmatlar, Uzbekistan web dev">
+    <meta property="og:title" content="Nasriy Sayt - Professional Veb-Dasturlash Xizmati">
+    <meta property="og:description" content="Biznesingiz uchun sotuvchi va zamonaviy veb-saytlar. Telegram: @nasriy_sayt1">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Glow Background Effects -->
+    <div class="glow-sphere sphere-1"></div>
+    <div class="glow-sphere sphere-2"></div>
+    <div class="glow-sphere sphere-3"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="logo-text">NASRIY<span class="highlight">.SAYT</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">Biz haqimizda</a>
+                <a href="#services" class="nav-link">Xizmatlar</a>
+                <a href="#calculator" class="nav-link">Kalkulyator</a>
+                <a href="#portfolio" class="nav-link">Loyihalar</a>
+                <a href="#process" class="nav-link">Jarayon</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://t.me/nasriy_sayt1" target="_blank" class="btn btn-telegram btn-sm">
+                    <i class="fa-brands fa-telegram"></i> @nasriy_sayt1
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menyu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge glow-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Professional Web & Bot Developer</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Biznesingiz uchun <span class="gradient-text">zamonaviy va sotuvchi</span> veb-saytlar
+                </h1>
+                
+                <p class="hero-description">
+                    HTML, CSS, JavaScript va ilg'or texnologiyalar yordamida tezkor, mobil moslashuvchan veb-saytlar va avtomatlashtirilgan Telegram botlar yaratamiz. Mijozlaringiz ishonchini birinchi soniyadanoq qozoning.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openOrderModal()">
+                        <span>Buyurtma berish</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <a href="#calculator" class="btn btn-secondary">
+                        <i class="fa-solid fa-calculator"></i>
+                        <span>Narxni hisoblash</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">100%</span>
+                        <span class="stat-label">Mobil moslik</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Ishlash kafolati</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">&lt; 1s</span>
+                        <span class="stat-label">Tezkor yuklanish</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window glass-card">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">app.js — NasriySayt</div>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"@nasriy_sayt1"</span>,
+  stack: [<span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JavaScript"</span>],
+  services: [
+    <span class="code-string">"Landing Page"</span>,
+    <span class="code-string">"Korporativ sayt"</span>,
+    <span class="code-string">"Telegram Botlar"</span>
+  ],
+  quality: <span class="code-keyword">true</span>,
+  status: <span class="code-string">"🚀 Buyurtmalarni qabul qilmoqda"</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-func">createAwesomeWebsite</span>(client) {
+  <span class="code-keyword">return</span> {
+    design: <span class="code-string">"Zamonaviy & Glassmorphism"</span>,
+    speed: <span class="code-string">"O'ta tezkor"</span>,
+    sales: <span class="code-string">"Maksimal konversiya"</span>
+  };
+}</code></pre>
+                    </div>
+                    <div class="code-badge">
+                        <i class="fa-solid fa-check-circle"></i> Kod standarti 100% toza
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Xizmatlarimiz</span>
+                <h2 class="section-title">Biz sizga qanday yordam bera olamiz?</h2>
+                <p class="section-desc">Biznesingiz ehtiyojidan kelib chiqqan holda mukammal raqamli yechimlarni taklif qilamiz.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-card">
+                    <div class="service-icon icon-cyan">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Landing Page Yaratish</h3>
+                    <p class="service-desc">
+                        Mahsulot yoki xizmatlaringizni tez va yuqori konversiya bilan sotuvchi bir sahifali zamonaviy saytlar.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Yuqori sotuvchi strukturasi</li>
+                        <li><i class="fa-solid fa-check"></i> Mobil moslashuvchanlik</li>
+                        <li><i class="fa-solid fa-check"></i> Form va Telegram integratsiyasi</li>
+                    </ul>
+                    <button class="btn btn-outline btn-full" onclick="openOrderModal('Landing Page')">Buyurtma berish</button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-card featured">
+                    <div class="featured-tag">Ommabop</div>
+                    <div class="service-icon icon-purple">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="service-title">Korporativ Veb-saytlar</h3>
+                    <p class="service-desc">
+                        Kompaniyangiz nufuzini va brendingiz ishonchliligini oshiruvchi ko'p sahifali professional veb-saytlar.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Ko'p sahifali zamonaviy dizayn</li>
+                        <li><i class="fa-solid fa-check"></i> SEO optimizatsiya</li>
+                        <li><i class="fa-solid fa-check"></i> Kompaniya portfoliosi va blog</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="openOrderModal('Korporativ Sayt')">Buyurtma berish</button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-card">
+                    <div class="service-icon icon-blue">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">Telegram Bot va Avtomatlashtirish</h3>
+                    <p class="service-desc">
+                        Mijozlar buyurtmalarini avtomatik qabul qiluvchi, javob beruvchi va tizimingiz bilan bog'lanuvchi botlar.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> 24/7 Avtomatik javob berish</li>
+                        <li><i class="fa-solid fa-check"></i> Buyurtmalarni qayta ishlash</li>
+                        <li><i class="fa-solid fa-check"></i> Sayt bilan o'zaro integratsiya</li>
+                    </ul>
+                    <button class="btn btn-outline btn-full" onclick="openOrderModal('Telegram Bot')">Buyurtma berish</button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-card">
+                    <div class="service-icon icon-green">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="service-title">Saytlarni Takomillashtirish</h3>
+                    <p class="service-desc">
+                        Mavjud saytingiz dizaynini yangilash, xatolarni tuzatish hamda tezligini oshirish xizmati.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Dizaynni modernizatsiya qilish</li>
+                        <li><i class="fa-solid fa-check"></i> Tezlik va xavfsizlikni oshirish</li>
+                        <li><i class="fa-solid fa-check"></i> Yangi funksiyalar qo'shish</li>
+                    </ul>
+                    <button class="btn btn-outline btn-full" onclick="openOrderModal('Takomillashtirish')">Buyurtma berish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Price Calculator Section -->
+    <section class="calculator section-padding" id="calculator">
+        <div class="container">
+            <div class="calculator-wrapper glass-card">
+                <div class="calculator-header">
+                    <span class="badge">Interaktiv Kalkulyator</span>
+                    <h2>Loyiha narxini va muddatini hisoblang</h2>
+                    <p>Kerakli variantlarni tanlang va loyihangiz taxminiy narxini bilib oling.</p>
+                </div>
+
+                <div class="calculator-grid">
+                    <div class="calc-options">
+                        <!-- Step 1: Type -->
+                        <div class="calc-group">
+                            <label class="calc-label">1. Loyiha turini tanlang:</label>
+                            <div class="calc-radio-group">
+                                <label class="calc-radio">
+                                    <input type="radio" name="projectType" value="landing" data-price="450000" data-days="3" checked>
+                                    <span class="radio-box">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <strong>Landing Page</strong>
+                                        <small>3-5 kun</small>
+                                    </span>
+                                </label>
+                                <label class="calc-radio">
+                                    <input type="radio" name="projectType" value="corporate" data-price="900000" data-days="7">
+                                    <span class="radio-box">
+                                        <i class="fa-solid fa-building"></i>
+                                        <strong>Korporativ sayt</strong>
+                                        <small>7-10 kun</small>
+                                    </span>
+                                </label>
+                                <label class="calc-radio">
+                                    <input type="radio" name="projectType" value="bot" data-price="350000" data-days="3">
+                                    <span class="radio-box">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <strong>Telegram Bot</strong>
+                                        <small>2-4 kun</small>
+                                    </span>
+                                </label>
+                                <label class="calc-radio">
+                                    <input type="radio" name="projectType" value="custom" data-price="1200000" data-days="10">
+                                    <span class="radio-box">
+                                        <i class="fa-solid fa-code"></i>
+                                        <strong>Individual Loyiha</strong>
+                                        <small>10+ kun</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Extras -->
+                        <div class="calc-group">
+                            <label class="calc-label">2. Qo'shimcha funksiyalar:</label>
+                            <div class="calc-checkbox-group">
+                                <label class="calc-checkbox">
+                                    <input type="checkbox" class="calc-addon" data-price="150000" data-days="1">
+                                    <span class="checkbox-box">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span>Telegram bildirishnoma integratsiyasi</span>
+                                    </span>
+                                </label>
+                                <label class="calc-checkbox">
+                                    <input type="checkbox" class="calc-addon" data-price="100000" data-days="1">
+                                    <span class="checkbox-box">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <span>SEO va meta-teg optimizatsiya</span>
+                                    </span>
+                                </label>
+                                <label class="calc-checkbox">
+                                    <input type="checkbox" class="calc-addon" data-price="120000" data-days="1">
+                                    <span class="checkbox-box">
+                                        <i class="fa-solid fa-language"></i>
+                                        <span>Ko'p tillilik (Multi-language)</span>
+                                    </span>
+                                </label>
+                                <label class="calc-checkbox">
+                                    <input type="checkbox" class="calc-addon" data-price="200000" data-days="2">
+                                    <span class="checkbox-box">
+                                        <i class="fa-solid fa-sliders"></i>
+                                        <span>Admin panel / Boshqaruv paneli</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Panel -->
+                    <div class="calc-summary glass-card">
+                        <h3>Loyiha smetasi</h3>
+                        <div class="summary-item">
+                            <span>Boshlang'ich narx:</span>
+                            <strong id="basePrice">450,000 so'm</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Qo'shimchalar:</span>
+                            <strong id="addonPrice">0 so'm</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Taxminiy muddat:</span>
+                            <strong id="totalDays">3-5 kun</strong>
+                        </div>
+                        <hr class="summary-divider">
+                        <div class="summary-total">
+                            <span>Jami qiymat:</span>
+                            <div class="total-amount" id="totalPrice">450,000 so'm</div>
+                        </div>
+                        <p class="calc-note">* Yakuniy narx loyiha texnik topshirig'iga (TZ) qarab aniqlashtiriladi.</p>
+                        
+                        <button class="btn btn-primary btn-full" onclick="orderFromCalculator()">
+                            <i class="fa-brands fa-telegram"></i> Ushbu smeta bilan buyurtma berish
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Namuna Loyihalar</span>
+                <h2 class="section-title">Bizning ishlarimiz</h2>
+                <p class="section-desc">Zamonaviy dizayn va yuqori sifatli kod bilan tayyorlangan namunalar.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-visual p-bg-1">
+                        <div class="project-badge">Landing Page</div>
+                        <div class="mockup-screen">
+                            <div class="mock-header">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mock-content">
+                                <div class="mock-hero">
+                                    <div class="mock-title">Logistika Biznes Landing</div>
+                                    <div class="mock-sub">Yuk tashish va kuryerlik xizmati</div>
+                                    <div class="mock-btn">Buyurtma berish</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cargo Express Landing Page</h3>
+                        <p>Xalqaro yuk tashish kompaniyasi uchun yuqori konversiyali va tezkor sayt.</p>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-visual p-bg-2">
+                        <div class="project-badge">Korporativ Sayt</div>
+                        <div class="mockup-screen">
+                            <div class="mock-header">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mock-content">
+                                <div class="mock-hero">
+                                    <div class="mock-title">Mebel Ishlab Chiqarish</div>
+                                    <div class="mock-sub">Katalog va narxlar tizimi</div>
+                                    <div class="mock-btn">Katalogni ko'rish</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Modern Furniture Studio</h3>
+                        <p>Kompaniya mahsulotlari katalogi va bog'lanish shakliga ega korporativ sayt.</p>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>Glassmorphism</span>
+                            <span>JS API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-visual p-bg-3">
+                        <div class="project-badge">Telegram Bot + Sayt</div>
+                        <div class="mockup-screen">
+                            <div class="mock-header">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mock-content">
+                                <div class="mock-hero">
+                                    <div class="mock-title">Restoran Bot & Menyu</div>
+                                    <div class="mock-sub">Onlayn buyurtma qabul qilish</div>
+                                    <div class="mock-btn">Savatga qo'shish</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restoran Onlayn Menyu</h3>
+                        <p>Buyurtmalarni to'g'ridan-to mehmondan Telegram botga yetkazuvchi tizim.</p>
+                        <div class="tech-tags">
+                            <span>Telegram Bot</span>
+                            <span>Web App</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="process section-padding" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Bosqichlar</span>
+                <h2 class="section-title">Loyiha ustida ishlash jarayoni</h2>
+                <p class="section-desc">Har bir loyiha 4 ta aniq va shaffof bosqichda amalga oshiriladi.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="step-card glass-card">
+                    <div class="step-number">01</div>
+                    <h3>Brif va Tahlil</h3>
+                    <p>Sizning talablaringiz va maqsadingiz o'rganiladi, loyiha tuzilmasi kelishib olinadi.</p>
+                </div>
+                <div class="step-card glass-card">
+                    <div class="step-number">02</div>
+                    <h3>UI/UX Dizayn</h3>
+                    <p>Zamonaviy, mobil moslashuvchan va foydalanuvchiga qulay dizayn tayyorlanadi.</p>
+                </div>
+                <div class="step-card glass-card">
+                    <div class="step-number">03</div>
+                    <h3>Kodlash va Sinov</h3>
+                    <p>Toza va tezkor HTML/CSS/JS kodi yoziladi hamda barcha qurilmalarda sinovdan o'tkaziladi.</p>
+                </div>
+                <div class="step-card glass-card">
+                    <div class="step-number">04</div>
+                    <h3>Ishga tushirish</h3>
+                    <p>Sayt domenga joylanadi va 100% tayyor holatda topshirilib, qo'llab-quvvatlanadi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Kóp Beriladigan Savollar</span>
+                <h2 class="section-title">Tez-tez beriladigan savollar</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Sayt tayyor bo'lishi uchun qancha vaqt ketadi?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Loyiha turiga qarab: Landing Page 3-5 kun, Korporativ saytlar 7-10 kun va Telegram botlar 2-4 kun ichida to'liq tayyor bo'ladi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Sayt telefonga moslashuvchan bo'ladimi?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Albatta! Barcha yaratilgan saytlar smartfonlar, planshetlar va kompyuterlar uchun 100% moslashgan (Responsive) bo'ladi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>To'lov qanday tartibda amalga oshiriladi?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ish boshlashdan oldin 30% bo'nak (avans) to'lanadi. Qolgan 70% to'lov loyiha to'liq tayyor bo me'yorga kelgach amalga oshiriladi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Loyiha topshirilgandan so'ng qo'llab-quvvatlash bormi?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ha! Har bir loyihaga kamida 1 oy bepul texnik qo'llab-quvvatlash va kichik tuzatishlar xizmati qo'shib beriladi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-card glass-card glow-border">
+                <div class="cta-content">
+                    <h2>Biznesingizni yangi bosqichga olib chiqing!</h2>
+                    <p>Savollaringiz bormi yoki loyihani muhokama qilmoqchimisiz? Hoziroq Telegram orqali yozing.</p>
+                    
+                    <div class="cta-actions">
+                        <button class="btn btn-primary btn-lg" onclick="openOrderModal()">
+                            <i class="fa-solid fa-paper-plane"></i> Buyurtma berish
+                        </button>
+                        <a href="https://t.me/nasriy_sayt1" target="_blank" class="btn btn-telegram btn-lg">
+                            <i class="fa-brands fa-telegram"></i> @nasriy_sayt1
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                    <span class="logo-text">NASRIY<span class="highlight">.SAYT</span></span>
+                </a>
+                <p>Zamonaviy veb-dasturlash va IT yechimlar markazi.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Aloqa va Buyurtma:</h4>
+                <a href="https://t.me/nasriy_sayt1" target="_blank" class="telegram-link">
+                    <i class="fa-brands fa-telegram"></i> 📩 Buyurtma yoki savollar uchun: @nasriy_sayt1
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Nasriy Sayt. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-card glass-card">
+            <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+            <div class="modal-header">
+                <h3><i class="fa-brands fa-telegram"></i> Buyurtma Berish</h3>
+                <p>Ma'lumotlarni to'ldiring, ma'lumot Telegram orqali yuboriladi.</p>
+            </div>
+            <form id="orderForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="clientName">Ismingiz yoki Kompaniya nomi:</label>
+                    <input type="text" id="clientName" placeholder="Masalan: Sardor" required>
+                </div>
+                <div class="form-group">
+                    <label for="clientPhone">Telefon raqam yoki Telegram:</label>
+                    <input type="text" id="clientPhone" placeholder="+998 90 123 45 67 yoki @username" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceType">Xizmat turi:</label>
+                    <select id="serviceType">
+                        <option value="Landing Page">Landing Page Yaratish</option>
+                        <option value="Korporativ Sayt">Korporativ Veb-sayt</option>
+                        <option value="Telegram Bot">Telegram Bot / Avtomatlashtirish</option>
+                        <option value="Sayt Takomillashtirish">Saytni Takomillashtirish</option>
+                        <option value="Individual Loyiha">Individual Loyiha</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="projectDetails">Loyiha haqida qisqacha (ixtiyoriy):</label>
+                    <textarea id="projectDetails" rows="3" placeholder="Masalan: Mebel do'koni uchun katalogni o'z ichiga olgan sayt kerak..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fa-solid fa-paper-plane"></i> Telegram orqali jo'natish (@nasriy_sayt1)
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Xabar tayyorlanmoqda...</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
