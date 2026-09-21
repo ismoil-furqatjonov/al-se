@@ -177,10 +177,10 @@ function handleFormSubmit(event) {
     if (details) {
         message += `📝 *Tafsilotlar:* ${details}\n`;
     }
-    message += `\n📩 Telegram: @nasriy_sayt1`;
+    message += `\n📩 Telegram Lichka: @Saytlaruzb | Kanal: @nasriy_sayt1`;
 
     const encodedMessage = encodeURIComponent(message);
-    const telegramUrl = `https://t.me/nasriy_sayt1?text=${encodedMessage}`;
+    const telegramUrl = `https://t.me/Saytlaruzb?text=${encodedMessage}`;
 
     // Show toast notification
     showToast("Ma'lumotlar tayyorlandi! Telegram ochilmoqda...");

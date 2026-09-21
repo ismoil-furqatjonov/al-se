@@ -236,6 +236,60 @@ body {
     box-shadow: 0 4px 20px rgba(34, 158, 217, 0.4);
 }
 
+.btn-telegram-personal {
+    background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.btn-telegram-personal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.5);
+}
+
+.btn-email {
+    background: rgba(239, 68, 68, 0.12);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.btn-email:hover {
+    background: #ef4444;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
+}
+
+.contact-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+.contact-item i {
+    font-size: 1.1rem;
+    color: var(--accent-indigo);
+}
+
+.contact-item.highlight-contact i {
+    color: var(--accent-cyan);
+}
+
 .btn-sm {
     padding: 8px 16px;
     font-size: 0.875rem;
